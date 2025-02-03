@@ -1,0 +1,162 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:poppins;
+}
+.portfolio_container{
+    min-height: 100vh;
+    width : 100%;
+    display:flex;
+}
+.navlist{
+    display:flex;
+     gap: 1.5cm;
+     justify-content: center;
+     align-items: center;
+     position :absolute;
+     margin-top: 2rem;
+     margin-left: 5cm;
+     margin-right: 5cm;
+
+}
+.navlist li{
+    list-style: none;;
+}
+.navlist li a{
+    text-decoration:none;
+    text-transform: uppercase;
+    align-items: center;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #fff;
+}
+.left-container,.right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.left-container{
+    background:#262525;
+    width:70%;
+    padding-left: 3rem;
+
+
+}
+.right-container{
+    background:rgb(117, 117, 235);
+    width:30%;
+}
+.icons .fa-brands{
+    color: #fff;
+    font-size: 2rem;
+}
+.icons{
+    display:flex;
+    flex-direction: column;
+    gap: 3cm;
+    justify-content: center;
+    align-items: center;
+    height :100vh;
+    width: 1cm;
+    background-color: black;
+    position: absolute; /* Position it absolutely within the left-container */
+    left: 0; /* Align it to the left edge */
+    top: 0; /* Align it to the top edge */
+    margin: 0; /* Remove any default margin */
+    padding: 0;
+}
+.content{
+    margin-left: 4rem;
+}
+.content h2{
+    color: #fff;
+    font-size: 2rem;
+}
+.content h1{
+    font-size: 4rem;
+    color: blueviolet;
+    animation: slideIn 5s ease-in-out; /* Add animation to h1 */
+}
+@keyframes slideIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.content p{
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-right: 2rem;
+    font-style: italic;
+    line-height: 1.8rem ;
+ 
+}
+.btn1 button{
+    border:.1rem solid blue;
+    font-size: 1.1rem;
+    padding : .8rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+}
+button:nth-child(1){
+    background-color: lightblue;
+    color: black;
+    transition: 0.5s;
+}
+button:nth-child(2){
+    background-color: transparent;
+    color: #fff;
+    margin-left: 2rem;
+    transition: 0.5s;
+}
+button:nth-child(1):hover{
+    background-color:transparent;
+    color:#fff;
+}
+button:nth-child(2):hover{
+    background-color: lightblue;
+    color: black;
+}
+.icons .fa-brands:hover{
+    cursor:pointer;
+    background-color: white;
+    color: black;
+
+}
+.design .circle{
+  aspect-ratio: 1;
+  position:absolute;
+  border-radius: 50%; 
+  /* for creting circle in center of page */
+  top: 4cm;
+  left: 70%;
+  transform: translate(-50%, -50%);
+   
+   
+}
+.circle:nth-child(1){
+    background-color: red;
+    width: 17rem;
+    /* // circle me do colour */
+   background: linear-gradient(90deg, transparent 50%, blueviolet 50%);
+}
+.circle:nth-child(2){
+    width: 14rem;
+    background-image:url("image/a.jpg");
+    background-size: 100%;
+    box-shadow: 0 0 4rem  rgb(183, 238, 94);
+}
+.navlist li a:hover{
+    color: blueviolet;
+}
+.right-container {
+    background: url(image/B.gif) no-repeat center center;
+    background-size: cover;
+    width: 30%;
+}
